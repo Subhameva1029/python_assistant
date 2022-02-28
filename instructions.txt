@@ -1,0 +1,23 @@
+!!!!!!!!________Hello User________!!!!!!!!
+
+This a simple python bot developed by 
+"Subham Satyapriya". It is developed 
+for beginners. It is not a ML program. 
+It is just to master the syntax and 
+develop logic of programming ..
+
+some commands the code supports are 
+1.  tell me about "anything"
+2. open google
+3. open youtube
+4. open twitter
+5. open facebook
+6. tell me about yourself
+7. play music
+and many more......
+The program gives voice output(male / female) : you can chose any of them..
+I am trying to bring the voice input in the coming versions.
+
+Thanks  :)
+Subham Satyapriya
+kspsatyapriya2004@gmail.com
