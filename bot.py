@@ -237,6 +237,17 @@ if __name__ == '__main__':
                     speak("no man!!!")
                     speak("actually telephone or phone is the correct answer")
 
+        elif "change voice" in task or "change the voice" in task :
+            if a == 1 :
+                a = 0
+                engine.setProperty('voice', voices[a].id)
+                speak("voice changed to male ")
+            elif a == 0 :
+                a = 1
+                engine.setProperty('voice', voices[a].id)
+                speak("voice changed to female")
+
+
         else :
             speak("sorry !!!")
             speak("i don't understand ")
