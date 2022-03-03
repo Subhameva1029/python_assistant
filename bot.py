@@ -5,6 +5,7 @@ import webbrowser
 import random
 import os
 import subprocess
+from subprocess import call
 
 
 music_track = 0
@@ -246,6 +247,12 @@ if __name__ == '__main__':
                 a = 1
                 engine.setProperty('voice', voices[a].id)
                 speak("voice changed to female")
+
+        elif "calculation" in task :
+            speak("Opening calculator")
+
+            speak(" Please tell the voice you want in calculator")
+            call(["python", "calculator.py"])
 
 
         else :
