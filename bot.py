@@ -1,3 +1,5 @@
+"""it is a python program developed by subham satyapriya"""
+
 import pyttsx3
 import datetime
 import wikipedia
@@ -15,8 +17,16 @@ c = 0
 d = 0
 name_my = ""
 name = ""
+"""setting the voice output using pyttsx3"""
+
+
+
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
+
+"""Taking the voice choice from the user"""
+
+
 voice_type = input("Enter the voice You Want male or female : ")
 if 'female' in voice_type :
     a += 1
@@ -32,6 +42,7 @@ def speak(audio):
 
 
 if __name__ == '__main__':
+#wishing the user according to the time
 
     hour = int(datetime.datetime.now().hour)
     name = input("Enter Your name : ")
@@ -64,8 +75,13 @@ if __name__ == '__main__':
     else :
          speak("I am your assistance. I am developed by Subham Satyapriya")
          speak("How can i help you")
+
+    #starting getting user's task
+
+
     while True:
         task = input("Please Write what can i do for you...")
+#checking the task and doing the appropriate tasks
 
         if 'wikipedia' in task :
             speak('Searching Wikipedia...')
@@ -248,11 +264,17 @@ if __name__ == '__main__':
                 engine.setProperty('voice', voices[a].id)
                 speak("voice changed to female")
 
-        elif "calculation" in task :
+        elif "calculation" in task or "calculator" in task :
             speak("Opening calculator")
-
             speak(" Please tell the voice you want in calculator")
             call(["python", "calculator.py"])
+
+        elif "game" in task :
+            speak("starting game")
+            speak(" ")
+            speak("welcome to the gaming section ")
+            call(["python", "game.py"])
+
 
 
         else :
