@@ -24,6 +24,17 @@ name = ""
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 
+print("""
+  _________    ___.   .__                   ___________             
+ /   _____/__ _\_ |__ |  |__ _____    _____ \_   _____/__  ______   
+ \_____  \|  |  \ __ \|  |  \\__  \  /     \ |    __)_\  \/ |__  \  
+ /        \  |  / \_\ \   Y  \/ __ \|  Y Y  \|        \\   / / __ \_
+/_______  /____/|___  /___|  (____  /__|_|  /_______  / \_/ (____  /
+        \/          \/     \/     \/      \/        \/           \/ 
+
+    Written By : Subham Satyapriya 
+""")
+
 """Taking the voice choice from the user"""
 
 
